@@ -6,9 +6,11 @@
     <meta name="description" content="CurrencyConverterApp" />
     <meta name="keywords" content="HTML, CSS, JS, CurrencyConverterApp" />
     <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="./responsive.css">
     <title>Currency Converter</title>
   </head>
   <body>
+    <!-- Navbar -->
     <div class="navbar">
       <nav>
         <h1><a href="#">ConvertX</a></h1>
@@ -19,12 +21,13 @@
         </ul>
       </nav>
     </div>
+    <!-- Main Content -->
     <div class="container">
       <h1>Choose A Currency To Convert</h1>
       <form action="/action.php" method="get">
-        <label for="quantity">Choose A Quantity:</label>
+        <label for="quantity">Choose Quantity:</label>
         <input type="number" name="quantity" min="1" />
-        <label for="currency">Choose A Currency:</label>
+        <label for="currency">Choose Currency:</label>
         <select name="currency">
           <option value="PKR">Pakistani Rupee</option>
           <option value="USD">US Dollar</option>
@@ -33,6 +36,8 @@
         </select>
         <button class="btn" type="submit">Submit</button>
       </form>
+
+      <!-- Output -->
       <div class="output">
         <h1>Here Is Your Converted Values In Different Currencies</h1>
         <table>
